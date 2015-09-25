@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SaveCrypto</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>SaveCrypto</title>
+    <script src="http://use.edgefonts.net/bebas-neue;droid-serif:n4,i4,n7,i7;montserrat;source-sans-pro:n4,i4,n7,i7.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="styles/wetheusers.css" /> -->
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 
-<%= yield %>
+    <!--[if lt IE 9]>
+      <script src="html5shiv.js"></script>
+    <![endif]-->
 
-</body>
+    <!-- Meta tags !-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="Index,Follow" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+
+    <!-- Open graph !-->
+
+    <meta property="og:image" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:site_name" content="We The Users"/>
+  </head>
+  <body>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.14.2/minified/polyfiller.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
